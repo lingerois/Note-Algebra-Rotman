@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Book Template
+title: Algebra Notes
 subtitle:
 description:
 keywords:
@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.lingerois.com/bookname/
-root: /bookname/
+url: https://www.lingerois.com/algebra-rotman
+root: /algebra-rotman
 permalink: :title/
 permalink_defaults:
 
