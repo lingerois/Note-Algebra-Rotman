@@ -4,9 +4,11 @@ This section is a review of number theory. This section is quite important, it c
 
 
 
+# Notions
 
+Rotman denotes the greastest commnon divisior of $a,b$ as $(a,b)$. Since $(a,b)$ has too many meanings, I prefer use $\gcd(a,b)$. And for least common multiple of $a,b$, I prefer $\text{lcm}(a,b)$.
 
-# Nature Numbers
+# Axiom of Nature Numbers
 
 We starts from **natural number**. Natural numbers can be defined by [Peano Axioms]( https://en.wikipedia.org/wiki/Peano_axioms ). In our whole course, natural numbers starts from 0, that is
 $$
@@ -38,10 +40,6 @@ For us, it is better to remember the 2nd definition as the def of prime numbers 
 {% endadmonition %}
 
 Proof Sketch: Use the least integer axiom to argue that the set $C$ containing all integers which the property is false should be $\emptyset$.
-
-
-
-# Mathematical Induction
 
 We list 2 mathematical induction here without proofs.
 
@@ -226,7 +224,7 @@ Proof Sketch: Use Fermat Theory (1.24).
 ![](1573220036651.png)
 {% endadmonition %}
 
-The solution in the theorem can be checked easily.
+The solution in the theorem can be checked easily. For different solutions $x_1,x_2$, there is $a(x_1-x_2)\equiv 0\mod m$. Since $\gcd(a,m)=1$, there must be $x_1-x_2\equiv 0\mod m$.
 
 {% admonition gray %}
 ![](image-20191206213909947.png)
@@ -234,10 +232,6 @@ The solution in the theorem can be checked easily.
 
 The next old theorem is quite important. We are going to talk about the ring version of it when study communitive ring.
 {% admonition gray %}
-![](nimage-20191206214005002.png)
+![](image-20191206214005002.png)
 {% endadmonition %}
-**Proof**: The first equation can be solved by the method introduced in **Theorem 1.26**, that is $x=sb+km$ for some $k$. $s$ can be determined, $k$ can be changed. We substitute this into the second equation, and get $sb+km=b'\mod m'$. We solve this for $k$ and get 
-$$
-k=(b'-sb)s'+k'm'
-$$
-for some $k'$. 
+We left the proof of this theorem in the notes of number theory.
