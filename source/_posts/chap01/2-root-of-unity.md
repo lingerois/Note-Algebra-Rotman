@@ -81,7 +81,7 @@ The next lemma can also be read out from the previous image:
 {% admonition gray %}
 ![](image-20191207203029592.png)
 {% endadmonition %}
-Proof Sketchy: Prove by division algorithm.
+Proof sketch: Prove by division algorithm.
 
 {% admonition gray %}
 ![](image-20191207203206188.png)
