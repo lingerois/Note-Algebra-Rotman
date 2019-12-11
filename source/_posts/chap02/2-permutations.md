@@ -79,9 +79,62 @@ The next theorem shows the importance of complete factorization.
 ![](image-20191209143229189.png)
 {% endadmonition %}
 
-**Proof Sketch**: The $\gamma \alpha \gamma^{-1}$ transfers elements by $\gamma(i_1)\mapsto i_1\mapsto i_2\mapsto \gamma(i_2)$. One can see that it just change the elements in each cycle of the complete factorization of $\alpha$. (by changing $\gamma(i_2)$ to some $\gamma(i_2)$).
+**Proof Sketch**: The $\alpha\gamma\alpha^{-1}$ transfers elements by $\alpha(i_1)\mapsto i_1\mapsto i_2\mapsto \alpha(i_2)$. One can see that it just change the elements in each cycle of the complete factorization of $\alpha$. (by changing $\gamma(i_2)$ to some $\gamma(i_2)$). Based on this idea, one can prove by compare cycle to cycle in both permutations.
 
 {% admonition gray %}
 ![](image-20191209143834627.png)
 {% endadmonition %}
 
+**Proof Sketch**: $\Leftarrow$ has been proved in **Lemma 2.7**. For $\Rightarrow$, we put two permutations and their complete factorization together, with each cycle is under a cycle of the same length:
+$$
+\begin{aligned}
+\gamma &= \gamma_1\gamma_2\cdots\gamma_k\cdots\gamma_t \\
+\delta &= \delta_1\delta_2\cdots\delta_k\cdots\delta_t
+\end{aligned}
+$$
+Let 
+$$
+\begin{aligned}
+\gamma_k&=(i_1\;i_2\cdots i_n) \\
+\delta_k&=(j_1\;j_2\cdots j_n)
+\end{aligned}
+$$
+
+We can construct some $\alpha_k$ such that $j_1\overset{\alpha^{-1}_k}\to \alpha_k^{-1}(j_1)\overset{\gamma}\to \alpha^{-1}_k(j_2)\overset{\alpha_k}\to j_2$. Such $\alpha_k$ is exactly "downward" function that maps $i_l$ to $j_l$. We do this for all $i\in [t]$, and set $\alpha=\alpha_1\alpha_2\cdots\alpha_t$. Then $\delta = \alpha\gamma\alpha^{-1}$.
+
+{% admonition gray %}
+![](image-20191210212029541.png)
+{% endadmonition %}
+
+Proof Sketch: Just try to find some method to represent all cycles to product of transpositions. This can be done like
+$$
+(1\;2\cdots r)=(1\;r)(1\;r-1)\cdots(1\;2)
+$$
+A permutation $\alpha$ can always be represent by a product of odd or even numbers of transpositions. That means, for some $m,n\in\mathbb Z$, an permutation $\alpha$ cannot be represent by
+$$
+\begin{aligned}
+\alpha &= \beta_1\beta_2\cdots\beta_{2m} \\
+\alpha &= \gamma_1\gamma_2\cdots\gamma_{2n+1}
+\end{aligned}
+$$
+where $\gamma_i$ and $\beta_j$ are all transpositions.
+
+I would explain the proof of this fact if I found a good enough one. If you agree with the above fact, we can define:
+
+{% admonition gray %}
+![](image-20191210220450602.png)
+{% endadmonition %}
+
+{% admonition gray %}
+![](image-20191210220459597.png)
+{% endadmonition %}
+
+**Theorem 2.3** guarantees the function $\text{sgn}$ is well-defined.
+
+{% admonition gray %}
+![](image-20191210220521274.png)
+{% endadmonition %}
+
+{% admonition gray %}
+![](image-20191210220540718.png)
+{% endadmonition %}
