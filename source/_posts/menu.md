@@ -4,4 +4,5 @@
   * [1.3 Some Set Theory](/algebra-rotman/chap01/3-some-set-theory)
 * **CHAP 02** Group I
   * [2.2 Permutations](/algebra-rotman/chap02/2-permutations)
+  * [2.3 Groups](/algebra-rotman/chap02/3-groups)
 
